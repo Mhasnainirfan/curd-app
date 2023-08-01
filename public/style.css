@@ -1,0 +1,147 @@
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    background-color: #000000;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    padding: 2em;
+    margin: 0;
+    width: 10wh;
+    height: 100vh;
+    color: #ffffff; /* Changed text color to white */
+}
+
+a, p, h1,  h3, h4, h5, h6 {
+    margin: 0;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.column, form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    width: 90%;
+}
+
+.button {
+    color: #ffffff;
+    background-color: #000000;
+    width: 7.5em; /* Increased button width */
+    height: 2.5em; /* Increased button height */
+    border: none;
+    border-radius: 15px;
+    font-size: 15PX;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #000000; /* Darker background color on hover */
+}
+
+.center {
+    text-align: center;
+}
+
+form {
+    padding: 0 2em;
+}
+
+.input {
+    padding: 1em;
+    border: none;
+    border-radius: 10px;
+    width: 20%;
+    height: 3em;
+    color: #000000;
+    background-color: #657ce0;
+    
+}
+
+::placeholder {
+    color: #000000;
+    font-style: inherit;
+    font-size: large;
+}
+
+textarea {
+    height: 50px;
+    resize: horizontal;
+}
+
+.result {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 2px;
+}
+
+.post {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5em;
+    gap: 2px;
+    width: 15em; /* Increased post width */
+    border: 2px solid #fffefe; /* Changed border to solid */
+    background-color: #657ce0;
+    box-shadow: 0 0 10px rgba(206, 205, 205, 0.1); /* Added box shadow */
+}
+
+.post>p {
+    font-size: 0.6em;
+    width: 100%;
+    text-align: left;
+}
+
+.regards {
+    font-size: 0.9em;
+}
+
+/* Removed the scroll styles */
+
+
+/* Add this CSS for the toast notification */
+.toast {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+  }
+  
+  .show {
+    visibility: visible;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+  
+  @keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+  
